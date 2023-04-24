@@ -3,8 +3,12 @@
 
 let express = require('express') // create new express app
 let api_routes = require('./routes/api') // require routes/api file
+let path = require('path')
 
 let app = express() // create a new web app
+
+let vueClientpath = path.join(__dirname, 'student-sign-in-client', 'dist')
+app.use(express.static(vueClientpath))
 
 // handle json body request
 // handles json requests and converts data to JavaScript

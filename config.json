@@ -1,0 +1,19 @@
+{
+    "development": {
+        "storage": "students.sqlite",
+        "dialect": "sqlite"
+    },
+    "production": {
+        "username": "YOUR_USERNAME",
+        "host": "YOUR DATABASE_SERVER.database.windows.net",
+        "database": "YOUR DATABASE",
+        "dialect": "mssql",
+        "ssl": true,
+        "dialectOptions": {
+            "ssl": {
+                "require": true,
+                "rejectUnauthorized": false
+            }
+        }
+    }
+}
